@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css/Menu.css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
-<script src="/WebDB/html-jsp/jquery-1.9.1.js"></script>
+<script src="/WebDB/javascript/jquery-1.9.1.js"></script>
 <script type="text/javascript">
  
 function toggle(id) {
