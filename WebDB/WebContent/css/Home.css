@@ -1,0 +1,22 @@
+@CHARSET "ISO-8859-1";
+
+
+#container{
+	height:100%;
+	width:100%;
+	position:absolute;
+	top: 0;
+	left: 0;
+}
+
+   
+   #menu{
+   top: 0;
+   left: 0;
+   height:100%;
+   width:25%;
+   float:left;
+   resize:horizontal;
+   overflow:auto;
+   scrolling: auto;
+   }

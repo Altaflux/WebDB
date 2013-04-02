@@ -1,0 +1,30 @@
+@CHARSET "ISO-8859-1";
+
+
+   ul.tree, ul.tree ul {
+     list-style-type: none;
+     background: url(/WebDB/images/vline.png) repeat-y;
+     margin: 0;
+     padding: 0;
+   }
+   
+   ul.tree ul {
+     margin-left: 10px;
+   }
+   ul.tree li:last-child {
+     background: #fff url(/WebDB/images/lastnode.png) no-repeat;
+   }
+
+   ul.tree li {
+     margin: 0;
+     padding: 0 12px;
+     line-height: 20px;
+     background: url(/WebDB/images/node.png) no-repeat;
+     color: #369;
+     font-weight: bold;
+   }   
+#tree_navigation {
+    margin: 10px;
+    margin-left: 10px;
+    color: #444444;
+}

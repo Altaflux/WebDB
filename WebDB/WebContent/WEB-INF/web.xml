@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID">
+  <display-name>webitest</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>html-jsp/index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Connection</display-name>
+    <servlet-name>Connection</servlet-name>
+    <servlet-class>com.servlet.Connection</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Connection</servlet-name>
+    <url-pattern>/Connection</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TableRetreive</display-name>
+    <servlet-name>TableRetreive</servlet-name>
+    <servlet-class>com.servlet.TableRetreive</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TableRetreive</servlet-name>
+    <url-pattern>/TableRetreive</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ColumnRetreive</display-name>
+    <servlet-name>ColumnRetreive</servlet-name>
+    <servlet-class>com.servlet.ColumnRetreive</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ColumnRetreive</servlet-name>
+    <url-pattern>/ColumnRetreive</url-pattern>
+  </servlet-mapping>
+</web-app>

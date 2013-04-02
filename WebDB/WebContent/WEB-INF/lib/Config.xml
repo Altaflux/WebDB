@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <controller servertypeName="MsSql">
+    <controllerlocation>com.database.controllers.Mssql</controllerlocation>
+    <jdbcLocation>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbcLocation>
+  </controller>
+</config> 
