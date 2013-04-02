@@ -8,18 +8,14 @@
 		<script type="text/javascript">
 				
 			$(document).ready(function(){
-
+				$(".rightcol").css("margin-top",$("#floating_menubar").height());
 				$(".leftcol").resizable({
 					resize: function(e, ui){
 						$(".rightcol").css("margin-left",ui.size.width + 10);
+						$("#floating_menubar").css("margin-left",ui.size.width + 10);
 						$(".leftcol .ui-resizable-e").css("left",ui.size.width);
 					}
 				});
-// 				$(".leftcol").load("html-jsp/menu.jsp");
-// 				$(".leftcol").append("html-jsp/menu.jsp");
-// 				$.get("html-jsp/menu.jsp", function(data){
-// 				    $(".leftcol").html(data);
-// 				});
 				
 				$.get('html-jsp/menu.jsp', function (data) {
 				    $('.leftcol').append(data);
@@ -32,6 +28,10 @@
 		<div class="colwrapper">
 			<div class="leftcol" style="width:300px;">
 			</div>
+			
+			<div id="floating_menubar" style="margin-left: 310px; left: 0px; position: fixed; top: 0px; width: 100%; z-index: 500;"><div id="serverinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ligula arcu, gravida in tincidunt sit amet, feugiat nec tellus. Ut tristique sodales massa non lacinia. Fusce in erat mauris. Nulla ornare vulputate turpis, in luctus justo gravida eget. Suspendisse porta eros in tellus semper varius. Nam sit amet placerat risus. Proin dictum, augue vitae aliquet scelerisque, enim nisl tristique libero, nec placerat neque elit vitae metus.<div class="clearfloat"></div></div><div id="topmenucontainer" class="menucontainer">
+			<div class="clearfloat"></div></div></div>
+			
 			<div class="rightcol" style="margin-left:310px;">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ligula arcu, gravida in tincidunt sit amet, feugiat nec tellus. Ut tristique sodales massa non lacinia. Fusce in erat mauris. Nulla ornare vulputate turpis, in luctus justo gravida eget. Suspendisse porta eros in tellus semper varius. Nam sit amet placerat risus. Proin dictum, augue vitae aliquet scelerisque, enim nisl tristique libero, nec placerat neque elit vitae metus.</p>
 				<p>Cras nec urna ante. Cras enim turpis, scelerisque et sodales a, tincidunt ac urna. Morbi non auctor risus. Etiam sollicitudin dui at risus venenatis fermentum. Sed porttitor volutpat elit sed placerat. Nulla posuere malesuada nisi euismod vehicula. Cras neque arcu, rutrum ut laoreet a, mattis et enim. Maecenas et risus nulla, vitae semper tortor.</p>
